@@ -6,6 +6,15 @@ This repository contains the deliverables for the requested QA assignment, split
 - `part2/` — Playwright end-to-end test suite with page objects and README
 - `part3/` — AI-augmented validation script that uses Playwright plus an LLM judge
 
+## Important note on live validation
+
+The project includes a real browser automation flow, but in this environment the live Trupeer login is currently blocked by an email-verification/auth gate before the dashboard loads. That means the app can be opened and the auth step observed, but it does not reach the authenticated dashboard state needed for the full E2E editor flow here.
+
+The included scripts therefore support both:
+
+- live execution when a valid session and compatible browser runtime are available, and
+- mock-mode execution for reproducible validation and CI-safe demonstration without a live Trupeer session.
+
 ## Requirements
 
 Set the following environment variables before running the automation:

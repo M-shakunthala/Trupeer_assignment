@@ -2,6 +2,10 @@
 
 This script exercises the same login flow and editor setup as the Playwright suite, captures the original script, submits multiple rewrite prompts, and then judges the result using an LLM with a structured validation rubric.
 
+## Important live-flow note
+
+The real Trupeer app in this environment currently stops at the email-verification/login gate before the dashboard is reachable. This is a product-level auth blocker rather than a script bug. The script therefore supports a real execution path when a valid authenticated session is available, but it also includes a mock-mode fallback that produces a valid sample result set for local validation and CI-safe demonstrations.
+
 ## Setup
 
 1. Install dependencies:

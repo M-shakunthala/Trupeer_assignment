@@ -1,0 +1,14 @@
+{
+  "name": "trupeer-playwright-assignment",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "dotenv": "^16.4.5",
+    "typescript": "^5.6.3"
+  }
+}
